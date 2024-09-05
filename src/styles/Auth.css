@@ -1,0 +1,35 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.auth {
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(90deg, rgb(91, 185, 240), rgb(91, 232, 240));
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0,0,0,.3);
+}
+
+.auth button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #3b5998;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.auth button:hover{
+    background-color: #293d69;
+    color: #fff;
+}

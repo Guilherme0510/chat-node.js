@@ -1,38 +1,80 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-header {
   text-align: center;
+  background-color: #3b5998;
+  color: white;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.room {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.room label {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.room input {
+  width: 200px;
+  height: 30px;
+  border: 2px solid #3b5998;
+  border-radius: 6px;
+  padding-left: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin: 5px;
+}
+.room button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+  background-color: #3b5998;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.room button:hover{
+  background-color: #293d69;
+    color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sign-out {
+  margin-block: 50px;
+}
+
+.btn-sign-out{
+  background-color: #ca4444;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.btn-sign-out:hover{
+  background-color: #862c2c;
+  color: #fff;
+  scale: 1.03;
 }
